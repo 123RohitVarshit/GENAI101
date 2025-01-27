@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interesting Fact</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 15px;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Did You Know?</h1>
+        <p id="fact"></p>
+        <button id="newFactBtn">Show Another Fact</button>
+    </div>
+    <script>
+        const facts = [
+            "Honey never spoils. Archaeologists have found pots of honey in ancient Egyptian tombs that are over 3000 years old and still perfectly edible.",
+            "Octopuses have three hearts. Two pump blood to the gills, while the third pumps it to the rest of the body.",
+            "Bananas are berries, but strawberries are not. In botanical terms, a berry is a fruit produced from the ovary of a single flower.",
+            "A group of flamingos is called a 'flamboyance.'",
+            "Wombat poop is cube-shaped. This unique shape prevents the feces from rolling away and helps mark their territory.",
+            "The Eiffel Tower can be 15 cm taller during the summer due to thermal expansion of the metal.",
+            "A day on Venus is longer than a year on Venus. It takes about 243 Earth days to rotate once on its axis, but only about 225 Earth days to orbit the Sun.",
+            "Sharks are older than trees. Sharks have existed for around 400 million years, while trees appeared about 350 million years ago.",
+            "The shortest war in history lasted only 38 to 45 minutes, fought between the British Empire and the Sultanate of Zanzibar on August 27, 1896.",
+            "Humans share 60% of their DNA with bananas."
+        ];
+
+        function getRandomFact() {
+            const randomIndex = Math.floor(Math.random() * facts.length);
+            return facts[randomIndex];
+        }
+
+        document.getElementById('fact').innerText = getRandomFact();
+
+        document.getElementById('newFactBtn').addEventListener('click', function() {
+            document.getElementById('fact').innerText = getRandomFact();
+        });
+    </script>
+</body>
+</html>
