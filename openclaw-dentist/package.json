@@ -1,0 +1,25 @@
+{
+  "name": "openclaw-dentist",
+  "version": "1.0.0",
+  "description": "Personal AI Dentist skill for Openclaw",
+  "type": "module",
+  "scripts": {
+    "db:init": "node scripts/init-db.js",
+    "db:reset": "rm -f data/dentist.db && npm run db:init",
+    "routine:log": "node tools/routine-log.js",
+    "routine:view": "node tools/routine-view.js",
+    "visit:add": "node tools/visit-add.js",
+    "visit:list": "node tools/visit-list.js",
+    "profile:view": "node tools/profile-view.js",
+    "profile:update": "node tools/profile-update.js",
+    "analyze": "node tools/analyze.js",
+    "chat": "node tools/chat.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^9.4.0",
+    "uuid": "^9.0.0",
+    "date-fns": "^3.3.0"
+  },
+  "keywords": ["openclaw", "skill", "dentist", "health", "ai"],
+  "license": "MIT"
+}

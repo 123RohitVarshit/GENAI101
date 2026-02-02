@@ -1,0 +1,12 @@
+.env
+.env.local
+node_modules/
+data/*.db
+data/*.db-journal
+*.log
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*.swo
+*~

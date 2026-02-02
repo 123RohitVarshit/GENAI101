@@ -1,0 +1,120 @@
+{
+  "routineQuestions": [
+    {
+      "id": "brushing_morning",
+      "question": "Did you brush your teeth this morning?",
+      "type": "boolean",
+      "category": "brushing"
+    },
+    {
+      "id": "brushing_night",
+      "question": "Did you brush your teeth before bed last night?",
+      "type": "boolean",
+      "category": "brushing"
+    },
+    {
+      "id": "brushing_duration",
+      "question": "How many minutes did you brush for (average)?",
+      "type": "number",
+      "min": 1,
+      "max": 5,
+      "category": "brushing"
+    },
+    {
+      "id": "flossed",
+      "question": "Did you floss today?",
+      "type": "boolean",
+      "category": "flossing"
+    },
+    {
+      "id": "mouthwash_used",
+      "question": "Did you use mouthwash today?",
+      "type": "boolean",
+      "category": "mouthwash"
+    },
+    {
+      "id": "water_intake",
+      "question": "How many glasses of water did you drink today?",
+      "type": "number",
+      "min": 0,
+      "max": 20,
+      "category": "hydration"
+    },
+    {
+      "id": "sugary_foods",
+      "question": "How many sugary foods or drinks did you have today?",
+      "type": "number",
+      "min": 0,
+      "max": 20,
+      "category": "diet"
+    },
+    {
+      "id": "pain_or_discomfort",
+      "question": "Any pain, sensitivity, or discomfort today?",
+      "type": "text",
+      "category": "symptoms"
+    },
+    {
+      "id": "notes",
+      "question": "Any other observations about your dental health today?",
+      "type": "text",
+      "category": "notes"
+    }
+  ],
+  "visitFields": [
+    {
+      "id": "visit_date",
+      "label": "Visit Date",
+      "type": "date",
+      "required": true
+    },
+    {
+      "id": "doctor_name",
+      "label": "Doctor Name",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "clinic_name",
+      "label": "Clinic Name",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "procedure_done",
+      "label": "Procedure Performed",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "diagnosis",
+      "label": "Diagnosis",
+      "type": "textarea",
+      "required": false
+    },
+    {
+      "id": "recommendations",
+      "label": "Doctor's Recommendations",
+      "type": "textarea",
+      "required": false
+    },
+    {
+      "id": "next_appointment",
+      "label": "Next Appointment Date",
+      "type": "date",
+      "required": false
+    },
+    {
+      "id": "cost",
+      "label": "Cost ($)",
+      "type": "number",
+      "required": false
+    },
+    {
+      "id": "notes",
+      "label": "Additional Notes",
+      "type": "textarea",
+      "required": false
+    }
+  ]
+}
